@@ -24,6 +24,23 @@
 <link rel="dns-prefetch" href="https://api.vturb.com.br">
 <!-- Turbo !-->
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '737502547758006');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=737502547758006&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 </head>
 
@@ -69,7 +86,7 @@
 			
 					
 				<!-- CTA !-->
-				<a href="https://pay.hotmart.com/G86386812A?off=2ioc9okj&checkoutMode=10&sck=01" class="cta esconder pulsar">ADQUIRIR A RECEITA DO CHÁ JAPONÊS.<br></a>
+				<a href="https://pay.kiwify.com.br/ZEyXMf2" class="cta esconder pulsar">ADQUIRIR A RECEITA DO CHÁ JAPONÊS.<br></a>
 				</a>
 				<!-- CTA !-->	                
                 
@@ -84,7 +101,7 @@
 						document.addEventListener("DOMContentLoaded", function() {
 
 						/* Altere o valor de em SECONDS_TO_DISPLAY = 00 para o tempo em segundo que a ação irá acontecer */
-						var SECONDS_TO_DISPLAY = 0;
+						var SECONDS_TO_DISPLAY = 989;
 						var CLASS_TO_DISPLAY = ".esconder";
 
 						/* Comando de conexão do player do vturb */
@@ -159,3 +176,25 @@
 <!-- JS Bootstrap !-->	
 </body>
 </html>
+
+<script>
+    let prefix = ["https://pay.kiwify.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}(); </script>
